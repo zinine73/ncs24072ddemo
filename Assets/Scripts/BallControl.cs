@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,26 +22,26 @@ public class BallControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // C#¿¡¼± System.RandomÀ» »ç¿ëÇßÁö¸¸ Unity¿¡¼± ¿ä°É »ç¿ë
-        int iv = Random.Range(1, 46); // iv¿¡´Â 45±îÁö¸¸ µé¾î¿Â´Ù
-        // ½Ç¼öÀÏ¶§¸¸ µÚ¿¡ °ªÀÌ Æ÷ÇÔ µÈ´Ù´Â °Í ÁÖÀÇ!!!
-        float fv = Random.Range(0.1f, 1.0f); // fv¿¡ 1.0f °¡ ¿Ã ¼ö ÀÖ´Ù
+        // C#ì—ì„  System.Randomì„ ì‚¬ìš©í–ˆì§€ë§Œ Unityì—ì„  ìš”ê±¸ ì‚¬ìš©
+        int iv = Random.Range(1, 46); // ivì—ëŠ” 45ê¹Œì§€ë§Œ ë“¤ì–´ì˜¨ë‹¤
+        // ì‹¤ìˆ˜ì¼ë•Œë§Œ ë’¤ì— ê°’ì´ í¬í•¨ ëœë‹¤ëŠ” ê²ƒ ì£¼ì˜!!!
+        float fv = Random.Range(0.1f, 1.0f); // fvì— 1.0f ê°€ ì˜¬ ìˆ˜ ìžˆë‹¤
 
         // ball reset
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            // ballÀÇ transform.position °ªÀ» º¯°æÇØ¼­ ball À§Ä¡¸¦ reset (new Vector(-5,4,0))
-            // xÁÂÇ¥´Â -8.27f ~ 8.2f »çÀÌ¿¡¼­ ·£´ýÀ¸·Î
+            // ballì˜ transform.position ê°’ì„ ë³€ê²½í•´ì„œ ball ìœ„ì¹˜ë¥¼ reset (new Vector(-5,4,0))
+            // xì¢Œí‘œëŠ” -8.27f ~ 8.2f ì‚¬ì´ì—ì„œ ëžœë¤ìœ¼ë¡œ
             fv = Random.Range(-8.27f, 8.2f);
             MyObj.transform.position = new Vector3(fv, 4f, 0f);
 
-            // ¸Å¹ø ´©¸¦ ¶§¸¶´Ù ballColor¿¡ ÀÖ´Â °ªÀ¸·Î  Colorµµ ¹Ù²ãº¸ÀÚ
+            // ë§¤ë²ˆ ëˆ„ë¥¼ ë•Œë§ˆë‹¤ ballColorì— ìžˆëŠ” ê°’ìœ¼ë¡œ  Colorë„ ë°”ê¿”ë³´ìž
             sr.color = ballColor[ballIndex];
-            // ÀÎµ¦½º¸¦ ¼ø¼­´ë·Î ³Ñ±â¸é¼­ ballColor °¡Á®¿Ã ¶§
+            // ì¸ë±ìŠ¤ë¥¼ ìˆœì„œëŒ€ë¡œ ë„˜ê¸°ë©´ì„œ ballColor ê°€ì ¸ì˜¬ ë•Œ
             //ballIndex++;
             //if (ballIndex >= ballColor.Length)
             //    ballIndex = 0;
-            // ÀÎµ¦½º¸¦ ·£´ýÀ¸·Î °¡Á®¿Íº¸ÀÚ
+            // ì¸ë±ìŠ¤ë¥¼ ëžœë¤ìœ¼ë¡œ ê°€ì ¸ì™€ë³´ìž
             // 0 <= ballIndex <= 5
             ballIndex = Random.Range(0, 6);
         }
