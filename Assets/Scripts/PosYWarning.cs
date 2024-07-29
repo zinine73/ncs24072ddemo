@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -22,12 +22,12 @@ public class PosYWarning : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // GameObject°¡ posY ¸¦ ³Ñ¾î°¡¸é Warning¸Þ½ÃÁö¸¦ Ãâ·ÂÇÑ´Ù
+        // GameObjectê°€ posY ë¥¼ ë„˜ì–´ê°€ë©´ Warningë©”ì‹œì§€ë¥¼ ì¶œë ¥í•œë‹¤
         if (transform.position.y > posY)
         {
-            string chajosa = Korean.ReplaceJosa($"{goName}(ÅÁ)ÈÄ·ç");
-            Debug.LogWarning($"{chajosa} {posY}¸¦ ³Ñ¾î°¬½À´Ï´Ù");
-            logText.text = $"{chajosa} {posY}¸¦ ³Ñ¾î°¬½À´Ï´Ù";
+            string chajosa = Korean.ReplaceJosa($"{goName}(íƒ•)í›„ë£¨");
+            Debug.LogWarning($"{chajosa} {posY}ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤");
+            logText.text = $"{chajosa} {posY}ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤";
         }
     }
 }

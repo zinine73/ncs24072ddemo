@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,9 +13,9 @@ public class move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("ÀÏ¹İÀûÀÎ Á¤º¸ ¾Ë¸²");
-        Debug.LogWarning("¹º°¡ ÁÖÀÇÇØ¾ß µÇ´Â ³»¿ë");
-        //Debug.LogError("¿¡·¯!!! ¹İµå½Ã ¼öÁ¤ÇÏ°í ³Ñ¾î°¥ °Í!");
+        Debug.Log("ì¼ë°˜ì ì¸ ì •ë³´ ì•Œë¦¼");
+        Debug.LogWarning("ë­”ê°€ ì£¼ì˜í•´ì•¼ ë˜ëŠ” ë‚´ìš©");
+        //Debug.LogError("ì—ëŸ¬!!! ë°˜ë“œì‹œ ìˆ˜ì •í•˜ê³  ë„˜ì–´ê°ˆ ê²ƒ!");
     }
 
     // Update is called once per frame
