@@ -15,6 +15,7 @@ public class move : MonoBehaviour
     {
         Debug.Log("일반적인 정보 알림");
         Debug.LogWarning("뭔가 주의해야 되는 내용");
+        // LogError을 만나면 UnityEditor가 멈추게 되므로 일단 주석처리
         //Debug.LogError("에러!!! 반드시 수정하고 넘어갈 것!");
     }
 
