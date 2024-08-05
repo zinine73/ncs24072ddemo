@@ -7,7 +7,7 @@ public class move : MonoBehaviour
     [SerializeField]
     private Rigidbody2D ri2d = null;
 
-    public float startPoint = 0;
+    public float startPoint = 0f;
     public float moveSpeed = 5f;
 
     // Start is called before the first frame update
